@@ -24,6 +24,9 @@
     <fullyQualifiedTypeName name="org.hibernate.ObjectNotFoundException"/>
     <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
     <fullyQualifiedTypeName name="com.example.algamoney.api.domain.Categoria"/>
-    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ControllerAdvice"/>
     <fullyQualifiedTypeName name="com.example.algamoney.api.services.exceptions.ObjectNotFoundException"/>
+    <fullyQualifiedTypeName name="javax.validation.constraints.NotEmpty"/>
+    <fullyQualifiedTypeName name="org.hibernate.validator.constraints.Length"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ControllerAdvice"/>
+    <fullyQualifiedTypeName name="org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler"/>
 </qualifiedTypeNameHistroy>
