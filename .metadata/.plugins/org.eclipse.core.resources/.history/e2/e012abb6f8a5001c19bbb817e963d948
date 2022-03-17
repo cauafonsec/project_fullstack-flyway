@@ -2,7 +2,7 @@ CREATE TABLE pessoa(
 	id BIGINT(20) PRIMARY KEY AUTO_INCREMENT,
 	nome VARCHAR(155) NOT NULL,
 	logradouro VARCHAR(155),
-	numero VARCHAR(155),
+	numero BINARY,
 	complemento VARCHAR(155),
 	bairro VARCHAR(155),
 	cep VARCHAR(155),

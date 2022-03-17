@@ -7,8 +7,7 @@ CREATE TABLE pessoa(
 	bairro VARCHAR(155),
 	cep VARCHAR(155),
 	cidade VARCHAR(155),
-	estado VARCHAR(155),
-	status BOOLEAN NOT NULL
+	estado VARCHAR(155)
 	) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 	
-	INSERT INTO pessoa (nome, logradouro, numero, complemento, bairro, cep, cidade, estado, status) VALUES ('Cauã', 'Rua Petrin', '65', null, 'Jardim', '123012', 'curitiba', 'parana', true);
+	INSERT INTO pessoa (nome, logradouro, numero, complemento, bairro, cep, cidade, estado) VALUES ('Cauã', 'Rua Petrin', '65', 'Casa', 'Jardim', '123012', 'curitiba', 'parana');
