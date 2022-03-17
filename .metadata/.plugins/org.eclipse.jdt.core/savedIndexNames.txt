@@ -31,7 +31,6 @@ INDEX VERSION 1.131+C:\projetos\curso-alga\.metadata\.plugins\org.eclipse.jdt.co
 3974407863.index
 267483897.index
 3286147805.index
-3057345573.index
 2300825583.index
 640222228.index
 2502523041.index

@@ -2,6 +2,7 @@ package com.example.algamoney.api.domain;
 
 import java.util.Objects;
 
+import javax.persistence.Embedded;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -25,6 +26,9 @@ public class Pessoa {
 
 	@NotEmpty
 	private Boolean status;
+	
+	@Embedded
+	private Endereco endereco;
 
 	public Pessoa() {
 	}
