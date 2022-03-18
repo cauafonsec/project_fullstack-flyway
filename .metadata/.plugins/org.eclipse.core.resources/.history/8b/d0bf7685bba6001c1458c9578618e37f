@@ -1,0 +1,38 @@
+package com.example.algamoney.api.services;
+
+import java.util.List;
+import java.util.Optional;
+
+import javax.validation.Valid;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.PathVariable;
+
+import com.example.algamoney.api.domain.Pessoa;
+import com.example.algamoney.api.repositories.PessoaRepository;
+
+@Service
+public class PessoaService {
+	
+	@Autowired
+	private PessoaRepository repo;
+	
+	
+	
+	public List<Pessoa> findAll() {
+		return repo.findAll();
+	}
+
+	public @Valid Pessoa insert(@Valid Pessoa obj) {
+		obj.setId(null);
+		return repo.save(obj);
+	}
+
+	public ResponseEntity<Pessoa> find(@PathVariable Integer id) {
+		Pessoa obj = repo.findOne(id);
+		return obj != null ? ResponseEntity.ok(obj) : ResponseEntity.notFound().build();
+	}
+
+}

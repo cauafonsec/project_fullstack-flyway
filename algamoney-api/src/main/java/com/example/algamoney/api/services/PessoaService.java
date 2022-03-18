@@ -6,7 +6,9 @@ import java.util.Optional;
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.PathVariable;
 
 import com.example.algamoney.api.domain.Pessoa;
 import com.example.algamoney.api.repositories.PessoaRepository;
@@ -28,9 +30,19 @@ public class PessoaService {
 		return repo.save(obj);
 	}
 
-	public Optional<Pessoa> find(Integer id) {
+	public Optional<Pessoa> find(@PathVariable Integer id) {
 		Optional<Pessoa> obj = repo.findById(id);
 		return obj;
+	}
+
+	public void delete(Integer id) {
+		find(id);
+		try {
+			repo.deleteById(id);
+		} catch (DataIntegrityViolationException e) {
+			throw new DataIntegrityViolationException("Não foi possivel deletar pessoa");
+		}
+		
 	}
 
 }

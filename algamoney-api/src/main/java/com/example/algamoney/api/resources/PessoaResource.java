@@ -31,18 +31,26 @@ public class PessoaResource {
 		return ResponseEntity.ok().body(obj);
 	}
 	
+	
 	@RequestMapping(method = RequestMethod.GET)
 	public ResponseEntity<List<Pessoa>> findAll() {
 		List<Pessoa> list = service.findAll();
 		return ResponseEntity.ok().body(list);
 	}
 	
+	
 	@RequestMapping(method = RequestMethod.POST)
 	public ResponseEntity<Void> insert(@Valid @RequestBody Pessoa obj) {
 		obj = service.insert(obj);
 		URI uri = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}").buildAndExpand(obj.getId()).toUri();
 		return ResponseEntity.created(uri).build();
-		
+	}
+	
+	
+	@RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
+	public ResponseEntity<Void> delete(@PathVariable Integer id) {
+		service.delete(id);
+		return ResponseEntity.noContent().build();
 		
 	}
 	

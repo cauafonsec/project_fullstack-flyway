@@ -24,7 +24,6 @@ public class Pessoa {
 	@Length(min = 3, max = 155)
 	private String nome;
 
-	@NotEmpty
 	private Boolean status;
 	
 	@Embedded
