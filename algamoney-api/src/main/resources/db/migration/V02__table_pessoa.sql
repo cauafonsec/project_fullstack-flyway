@@ -11,4 +11,5 @@ CREATE TABLE pessoa(
 	status BOOLEAN NOT NULL
 	) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 	
-	INSERT INTO pessoa (nome, logradouro, numero, complemento, bairro, cep, cidade, estado, status) VALUES ('Cauã', 'Rua Petrin', '65', null, 'Jardim', '123012', 'curitiba', 'parana', true);
+	INSERT INTO pessoa (nome, logradouro, numero, complemento, bairro, cep, cidade, estado, status) VALUES ('Cauã', 'Rua Petrin', '65', null, 'Jardim', '123012', 'curitiba', 'PR', true);
+	INSERT INTO pessoa (nome, logradouro, numero, complemento, bairro, cep, cidade, estado, status) VALUES ('Julio', 'Rua Texeira', '79', null, 'Vista', '321120', 'Sao Paulo', 'SP', true);

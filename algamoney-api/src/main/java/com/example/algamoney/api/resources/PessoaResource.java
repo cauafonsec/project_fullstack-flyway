@@ -54,4 +54,12 @@ public class PessoaResource {
 		
 	}
 	
+	@RequestMapping(value = "/{id}", method = RequestMethod.PUT)
+	public ResponseEntity<Void> update(@PathVariable Integer id, @Valid @RequestBody Pessoa obj) {
+		
+		
+		return null;
+	}
+	
+
 }

@@ -37,6 +37,7 @@ public class Pessoa {
 		this.id = id;
 		this.nome = nome;
 		this.setStatus(status);
+		
 	}
 
 	public Integer getId() {
@@ -61,6 +62,15 @@ public class Pessoa {
 
 	public void setStatus(Boolean status) {
 		this.status = status;
+	}
+
+	
+	public Endereco getEndereco() {
+		return endereco;
+	}
+
+	public void setEndereco(Endereco endereco) {
+		this.endereco = endereco;
 	}
 
 	@Override
