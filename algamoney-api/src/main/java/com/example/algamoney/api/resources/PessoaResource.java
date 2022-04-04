@@ -2,7 +2,6 @@ package com.example.algamoney.api.resources;
 
 import java.net.URI;
 import java.util.List;
-import java.util.Optional;
 
 import javax.validation.Valid;
 
@@ -26,8 +25,8 @@ public class PessoaResource {
 	private PessoaService service;
 	
 	@RequestMapping(value = "/{id}", method = RequestMethod.GET)
-	public ResponseEntity<Optional<Pessoa>> find(@PathVariable Integer id) {
-		Optional<Pessoa> obj = service.find(id);
+	public ResponseEntity<Pessoa> find(@PathVariable Integer id) {
+		Pessoa obj = service.find(id);
 		return ResponseEntity.ok().body(obj);
 	}
 	
@@ -56,9 +55,9 @@ public class PessoaResource {
 	
 	@RequestMapping(value = "/{id}", method = RequestMethod.PUT)
 	public ResponseEntity<Void> update(@PathVariable Integer id, @Valid @RequestBody Pessoa obj) {
-		
-		
-		return null;
+		obj.setId(id);
+		obj = service.update(obj);
+		return ResponseEntity.noContent().build();
 	}
 	
 
