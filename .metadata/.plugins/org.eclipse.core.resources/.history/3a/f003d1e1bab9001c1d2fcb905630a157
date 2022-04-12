@@ -1,0 +1,5 @@
+CREATE TABLE lancamento(id BIGINT(20) PRIMARY KEY AUTOINCREMENT,
+		descricao VARCHAR(155) NOT NULL,
+		dataVencimento DATE NOT NULL,
+		dataPagamento DATE NOT NULL,
+		valor DOT NULL

@@ -45,8 +45,6 @@ public class PessoaService {
 		Pessoa newObj = find(obj.getId());
 		return repo.save(newObj);
 	}
-	
-
 		
 
 }

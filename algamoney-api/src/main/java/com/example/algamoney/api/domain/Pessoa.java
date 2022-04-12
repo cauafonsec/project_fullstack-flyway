@@ -1,5 +1,6 @@
 package com.example.algamoney.api.domain;
 
+import java.io.Serializable;
 import java.util.Objects;
 
 import javax.persistence.Embedded;
@@ -14,7 +15,9 @@ import org.hibernate.validator.constraints.Length;
 
 @Entity
 @Table(name = "pessoa")
-public class Pessoa {
+public class Pessoa  implements Serializable {
+	private static final long serialVersionUID = 1L;
+
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -28,6 +31,7 @@ public class Pessoa {
 	
 	@Embedded
 	private Endereco endereco;
+	
 
 	public Pessoa() {
 	}
