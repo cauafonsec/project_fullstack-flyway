@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="org.springframework.data.jpa.repository.JpaRepository"/>
-    <fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
     <fullyQualifiedTypeName name="com.example.algamoney.api.repositories.CategoriaRepository"/>
     <fullyQualifiedTypeName name="com.example.algamoney.api.services.CategoriaService"/>
     <fullyQualifiedTypeName name="org.springframework.validation.annotation.Validated"/>
@@ -47,8 +45,19 @@
     <fullyQualifiedTypeName name="javax.persistence.Entity"/>
     <fullyQualifiedTypeName name="javax.persistence.Id"/>
     <fullyQualifiedTypeName name="javax.persistence.GeneratedValue"/>
+    <fullyQualifiedTypeName name="javax.persistence.Table"/>
+    <fullyQualifiedTypeName name="javax.persistence.JoinColumn"/>
     <fullyQualifiedTypeName name="javax.persistence.OneToMany"/>
     <fullyQualifiedTypeName name="javax.persistence.ManyToOne"/>
-    <fullyQualifiedTypeName name="javax.persistence.JoinColumn"/>
-    <fullyQualifiedTypeName name="javax.persistence.Table"/>
+    <fullyQualifiedTypeName name="com.example.algamoney.api.domain.enums.TipoLancamento"/>
+    <fullyQualifiedTypeName name="javax.validation.constraints.NotNull"/>
+    <fullyQualifiedTypeName name="javax.persistence.Enumerated"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Configurable"/>
+    <fullyQualifiedTypeName name="org.springframework.boot.autoconfigure.security.oauth2.resource.servlet.OAuth2ResourceServerAutoConfiguration"/>
+    <fullyQualifiedTypeName name="org.springframework.security.oauth2.config.annotation.web.configuration.ResourceServerConfigurerAdapter"/>
+    <fullyQualifiedTypeName name="org.springframework.security.oauth2.config.annotation.web.configuration.EnableResourceServer"/>
+    <fullyQualifiedTypeName name="org.springframework.security.config.annotation.web.configuration.EnableWebSecurity"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Configuration"/>
+    <fullyQualifiedTypeName name="org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter"/>
+    <fullyQualifiedTypeName name="org.springframework.security.config.http.SessionCreationPolicy"/>
 </qualifiedTypeNameHistroy>
